@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños, Amor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-image: url('fondo.jpeg'); 
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            overflow: hidden; 
+            position: relative;
+        }
+
+        /* Difuminado del fondo */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5); 
+            backdrop-filter: blur(5px);
+            z-index: 1;
+        }
+
+        .contenido {
+            position: relative;
+            z-index: 2; 
+            max-width: 30%; 
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-right: 20px; 
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #d6336c; 
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #333; 
+        }
+
+        .heart {
+            color: #d6336c;
+            font-size: 4rem;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenido">
+        <h1>¡Feliz Cumpleaños, Vida Mía!</h1>
+        <p>
+            Vida mía, feliz ultra mega hiper súper súper bien chido cumpleaños, eres una persona fabulosa llena de virtudes y de amor. Celebró y agradezco que en este fabuloso día hayas llegado a la vida y que se me permitiera celebrarlo contigo. ¡Te amo, vida mía!!! ❤️
+        </p>
+        <div class="heart">❤️</div>
+        <div class="footer">
+            Con todo mi cariño, <br> Ana Yatzin Castañeda Díaz
+        </div>
+    </div>
+</body>
+</html>
